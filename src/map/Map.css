@@ -1,0 +1,47 @@
+ #Map {
+ 	height: 400px;
+}
+
+ .map-wrapper {
+  	height: 400px;
+	width: 80%;
+	margin: auto;
+	/*border: 3px solid green;*/
+	padding: 10px;
+}
+
+.sec{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.low-tatras {
+	/*background-color: #D8C3A5;*/
+	background-image: url(../assets/images/body-bg-blur.jpg);
+  	background-size: cover;
+}
+
+.sumava {
+	/*background-color: #F3D250;*/
+	background-image: url(../assets/images/body-bg-blur1.jpg);
+  	background-size: cover;
+}
+
+.decin {
+	/*background-color: #F78888;*/
+	background-image: url(../assets/images/body-bg-blur2.jpg);
+  	background-size: cover;
+}
+
+.map-header {
+	color: white;
+}
+
+.map-desc {
+	color: white;
+	padding-right: 10%;
+	padding-left: 10%;
+}
