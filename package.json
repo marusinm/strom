@@ -1,5 +1,5 @@
 {
-  "name": "greenroofs",
+  "name": "strom",
   "version": "0.1.0",
   "private": true,
   "homepage": "http://zaitra.github.io/strom/",
@@ -73,5 +73,14 @@
     "presets": [
       "react-app"
     ]
-  }
+  },
+  "devDependencies": {
+    "mini-css-extract-plugin": "^0.8.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
