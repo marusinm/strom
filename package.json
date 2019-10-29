@@ -2,7 +2,7 @@
   "name": "greenroofs",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://surfer19.github.io/greenroofs/",
+  "homepage": "http://zaitra.github.io/strom/",
   "dependencies": {
     "autoprefixer": "6.7.2",
     "axios": "^0.18.0",
