@@ -7,6 +7,7 @@ import MapDecin from './map/MapDecin';
 import './App.css';
 import './map/Map.css';
 import logo from './assets/images/logo-z-transparent.png';
+import filter_icon from './assets/images/filter_icon.png';
 
 class App extends Component {
 
@@ -44,6 +45,12 @@ class App extends Component {
                 </div>
             <div class="map-wrapper">
                 <MapLowTatras id="Map"/>
+                <div class="legend">
+                    <img src={filter_icon} class="legend_image" />
+                    <p class="legend_text">Interaktivní <br/> filtr vrstev</p>
+                    <div class="legend_square1"> </div>
+                    <p class="legend_text">Úbytek lesa mezi <br/> lety 2015 až 2019</p>
+                </div>
             </div>
             <Link
                 class="btn btn-dark btn-lg"
@@ -63,6 +70,14 @@ class App extends Component {
             </div>
             <div class="map-wrapper">
                 <MapSumava id="Map"/>
+                <div class="legend">
+                    <img src={filter_icon} class="legend_image" />
+                    <p class="legend_text">Interaktivní <br/> filtr vrstev</p>
+                    <div class="legend_square1"> </div>
+                    <p class="legend_text">Úbytek lesa mezi <br/> lety 2015 az 2019</p>
+                    <div class="legend_square2"> </div>
+                    <p class="legend_text">Hranice <br/> katastrálního pozemku</p>
+                </div>
             </div>
             <Link
                 class="btn btn-dark btn-lg"
@@ -89,6 +104,12 @@ class App extends Component {
             </div>
             <div class="map-wrapper">
                 <MapDecin id="Map"/>
+                <div class="legend">
+                    <img src={filter_icon} class="legend_image" />
+                    <p class="legend_text">Interaktivní <br/> filtr vrstev</p>
+                    <div class="legend_square3"> </div>
+                    <p class="legend_text">Posunutí radarového stínu<br/> lesa v průběhu let 2015 až 2019</p>
+                </div>
             </div>
             <Link
                 class="btn btn-dark btn-lg"
@@ -108,7 +129,7 @@ class App extends Component {
                 <br />
                 Satelitní data od <a target="_blank" href="https://scihub.copernicus.eu">Copernicus Open Access Hub</a> 
                 <br />
-                Katastrální území od <a target="_blank" href="todo">TODO</a>
+                Katastrální území od <a target="_blank" href="https://geoportal.cuzk.cz/(S(kbu2aqdwswrucnikn5v1hm4m))/Default.aspx?mode=TextMeta&text=mapa.katastralni_uvod&side=mapy_KM">Geoportál ČÚZK</a>
             </div>
 
             <div class="Footer-div">

@@ -1,13 +1,61 @@
  #Map {
- 	height: 400px;
+ 	height: 360px;
+ 	position: top;
 }
 
  .map-wrapper {
-  	height: 400px;
+  	height: 420px;
 	width: 80%;
-	margin: auto;
+	/*margin: auto;*/
+	margin-top: 20px;
 	/*border: 3px solid green;*/
-	padding: 10px;
+	/*padding: 10px;*/
+	/*background-color: #282c34;*/
+	background-color: rgba(0,0,0,0.6);
+}
+
+.legend {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  width: 100%;
+  color: white;
+  position: bottom;
+  align-items: center;
+  justify-content: left;
+  padding-left: 5px;
+}
+
+.legend_image {
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+}
+
+.legend_text {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.legend_square1 {
+	height: 50px;
+  	width: 50px;
+	background-color: #892536;
+	margin-left: 20px;
+}
+
+.legend_square2 {
+	height: 50px;
+  	width: 6px;
+	background-color: #398bfc;
+	margin-left: 20px;
+}
+
+.legend_square3 {
+	height: 50px;
+  	width: 50px;
+	background-color: #362251;
+	margin-left: 20px;
 }
 
 .sec{
