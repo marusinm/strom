@@ -10,7 +10,7 @@ import axios from 'axios';
 import hash from 'object-hash';
 
 // Center of the map
-const lowTatrasCenter = [48.989927870251464, 19.523868151009083]
+const lowTatrasCenter = [48.99031771831017, 19.523394741117954]
 const lowTatrasPin = [48.997810425417505, 19.5234493073076]
 
 const MyMarker = props => {
@@ -82,7 +82,7 @@ class MapLowTatras extends React.Component {
                         >
                         </ImageOverlay>
                   </LayersControl.BaseLayer>
-                  <LayersControl.Overlay name="Nízké Tatry - Vegetation Index (NDVI)" checked>
+                  <LayersControl.Overlay name="Nízké Tatry - Úbytek lesa - rozdíl vegetačních indexů (NDVI)" checked>
                         <ImageOverlay
                         url={jasnaNdviDiff}
                         bounds={[

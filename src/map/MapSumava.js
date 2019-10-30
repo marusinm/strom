@@ -68,7 +68,7 @@ class MapSumava extends React.Component {
                 <Marker position={sumavaPin2}></Marker>
 
                 <LayersControl position="topright">
-                  <LayersControl.Overlay name="Šumava - RGB-Satelit 2018" >
+                  <LayersControl.Overlay name="Šumava - RGB-Satelit 201í" >
                         <ImageOverlay
                         url={satellite2018}
                         bounds={[
@@ -79,7 +79,7 @@ class MapSumava extends React.Component {
                         >
                         </ImageOverlay>
                   </LayersControl.Overlay>
-                  <LayersControl.Overlay name="Šumava - Vegetation Index (NDVI)" checked>
+                  <LayersControl.Overlay name="Šumava - Úbytek lesa - rozdíl vegetačních indexů (NDVI)" checked>
                         <ImageOverlay
                         url={sumavaNdviDiff}
                         bounds={[
@@ -91,7 +91,7 @@ class MapSumava extends React.Component {
                         </ImageOverlay>
                   </LayersControl.Overlay>
 
-                  <LayersControl.Overlay name="Sumava land registry" checked>
+                  <LayersControl.Overlay name="Šumava - katastrální území" checked>
                     { this.state && this.state.kataster &&
                       <GeoJSON key={hash({a: Math.random() * 10})} data={this.state ? this.state.kataster : null}
                       onEachFeature={this.onEachFeature}/>
