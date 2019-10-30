@@ -60,7 +60,7 @@ class MapLowTatras extends React.Component {
 
                 <LayersControl position="topright">
 
-                  <LayersControl.Overlay name="Low Tatras Sat 2015" checked>
+                  <LayersControl.BaseLayer name="Nízké Tatry - RGB-Satelit 2015" checked>
                         <ImageOverlay
                         url={jasnaSat2015}
                         bounds={[
@@ -70,8 +70,8 @@ class MapLowTatras extends React.Component {
                         opacity="1"
                         >
                         </ImageOverlay>
-                  </LayersControl.Overlay>
-                  <LayersControl.Overlay name="Low Tatras Sat 2019">
+                  </LayersControl.BaseLayer>
+                  <LayersControl.BaseLayer name="Nízké Tatry - RGB-Satelit 2019">
                         <ImageOverlay
                         url={jasnaSat2019}
                         bounds={[
@@ -81,8 +81,8 @@ class MapLowTatras extends React.Component {
                         opacity="1"
                         >
                         </ImageOverlay>
-                  </LayersControl.Overlay>
-                  <LayersControl.Overlay name="Low Tatras vegetation index NDVI" checked>
+                  </LayersControl.BaseLayer>
+                  <LayersControl.Overlay name="Nízké Tatry - Vegetation Index (NDVI)" checked>
                         <ImageOverlay
                         url={jasnaNdviDiff}
                         bounds={[

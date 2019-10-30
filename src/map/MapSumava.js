@@ -68,7 +68,7 @@ class MapSumava extends React.Component {
                 <Marker position={sumavaPin2}></Marker>
 
                 <LayersControl position="topright">
-                  <LayersControl.Overlay name="Sumava sat 2018" >
+                  <LayersControl.Overlay name="Šumava - RGB-Satelit 2018" >
                         <ImageOverlay
                         url={satellite2018}
                         bounds={[
@@ -79,7 +79,7 @@ class MapSumava extends React.Component {
                         >
                         </ImageOverlay>
                   </LayersControl.Overlay>
-                  <LayersControl.Overlay name="Sumava vegetation index NDVI" checked>
+                  <LayersControl.Overlay name="Šumava - Vegetation Index (NDVI)" checked>
                         <ImageOverlay
                         url={sumavaNdviDiff}
                         bounds={[
