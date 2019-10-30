@@ -1,31 +1,31 @@
 self.__precacheManifest = [
   {
-    "revision": "f8cf93113e65a6bd46ba",
-    "url": "/strom/static/css/main.4ec30e7b.chunk.css"
+    "revision": "4e17fc3b6e22cd90a2bd",
+    "url": "/strom/static/css/main.5326b219.chunk.css"
   },
   {
-    "revision": "f8cf93113e65a6bd46ba",
-    "url": "/strom/static/js/main.f8cf9311.chunk.js"
+    "revision": "4e17fc3b6e22cd90a2bd",
+    "url": "/strom/static/js/main.4e17fc3b.chunk.js"
   },
   {
     "revision": "19dde04c23cfab38d715",
     "url": "/strom/static/js/runtime~main.19dde04c.js"
   },
   {
-    "revision": "3c2eb8030cdcdc94e0f2",
-    "url": "/strom/static/js/2.3c2eb803.chunk.js"
+    "revision": "954c123e8bc4a9fcb5fe",
+    "url": "/strom/static/js/2.954c123e.chunk.js"
   },
   {
     "revision": "4afd23ed070bd73a60a3af73d04b2231",
     "url": "/strom/static/media/body-bg-blur2.4afd23ed.jpg"
   },
   {
-    "revision": "dd1a933ba0287e824ec3f84eeb53a8f6",
-    "url": "/strom/static/media/body-bg-blur1.dd1a933b.jpg"
-  },
-  {
     "revision": "b203eabfb0a5c8c9c5fc0ef277b8511e",
     "url": "/strom/static/media/body-bg-blur.b203eabf.jpg"
+  },
+  {
+    "revision": "dd1a933ba0287e824ec3f84eeb53a8f6",
+    "url": "/strom/static/media/body-bg-blur1.dd1a933b.jpg"
   },
   {
     "revision": "c3bcd8e58358b02acb1803791408e63f",
@@ -56,6 +56,10 @@ self.__precacheManifest = [
     "url": "/strom/static/media/decin_sat.f62e89c0.png"
   },
   {
+    "revision": "c82b0d085f0c3527a1c5f7114f470777",
+    "url": "/strom/static/media/filter_icon.c82b0d08.png"
+  },
+  {
     "revision": "95dd12f98865acca79e45917f37bb2ae",
     "url": "/strom/static/media/ice_cream.95dd12f9.svg"
   },
@@ -72,7 +76,7 @@ self.__precacheManifest = [
     "url": "/strom/static/media/head-bg3.7b535aa8.jpg"
   },
   {
-    "revision": "49aa8a89c13c3dba399f306df17490ac",
+    "revision": "d002ea38b1aea10df6ac535dc9485368",
     "url": "/strom/index.html"
   }
 ];
