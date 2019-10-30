@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "b7612ff750e405b1b213",
-    "url": "/strom/static/css/main.3ccd3221.chunk.css"
+    "revision": "f8cf93113e65a6bd46ba",
+    "url": "/strom/static/css/main.4ec30e7b.chunk.css"
   },
   {
-    "revision": "b7612ff750e405b1b213",
-    "url": "/strom/static/js/main.b7612ff7.chunk.js"
+    "revision": "f8cf93113e65a6bd46ba",
+    "url": "/strom/static/js/main.f8cf9311.chunk.js"
   },
   {
     "revision": "19dde04c23cfab38d715",
     "url": "/strom/static/js/runtime~main.19dde04c.js"
   },
   {
-    "revision": "5e75981bcab6d436ad42",
-    "url": "/strom/static/js/2.5e75981b.chunk.js"
+    "revision": "3c2eb8030cdcdc94e0f2",
+    "url": "/strom/static/js/2.3c2eb803.chunk.js"
   },
   {
     "revision": "4afd23ed070bd73a60a3af73d04b2231",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/strom/static/media/head-bg3.7b535aa8.jpg"
   },
   {
-    "revision": "bfa7d2a2eeaa09ff801c6003f4133d28",
+    "revision": "49aa8a89c13c3dba399f306df17490ac",
     "url": "/strom/index.html"
   }
 ];
