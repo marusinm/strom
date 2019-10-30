@@ -54,7 +54,7 @@ class MapDecin extends React.Component {
                 <Marker position={sentinel1Pin}></Marker>
 
                 <LayersControl position="topright">
-                  <LayersControl.Overlay name="Decin Sentinel 1" checked>
+                  <LayersControl.Overlay name="Dečín - Sentinel 1" checked>
                         <ImageOverlay
                         url={decin_sentinel1}
                         bounds={[
@@ -66,7 +66,7 @@ class MapDecin extends React.Component {
                         </ImageOverlay>
                   </LayersControl.Overlay>
 
-                  <LayersControl.Overlay name="Decin Sat" checked>
+                  <LayersControl.Overlay name="Dečín - RGB-Satelit" checked>
                         <ImageOverlay
                         url={decin_sat}
                         bounds={[
