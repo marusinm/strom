@@ -59,12 +59,7 @@ class MapLowTatras extends React.Component {
                 </Marker>
 
                 <LayersControl position="topright">
-
-<<<<<<< HEAD
                   <LayersControl.BaseLayer name="Nízké Tatry - RGB-Satelit 2015" checked>
-=======
-                  <LayersControl.BaseLayer name="Low Tatras Sat 2015" checked>
->>>>>>> change text language
                         <ImageOverlay
                         url={jasnaSat2015}
                         bounds={[
@@ -75,11 +70,7 @@ class MapLowTatras extends React.Component {
                         >
                         </ImageOverlay>
                   </LayersControl.BaseLayer>
-<<<<<<< HEAD
                   <LayersControl.BaseLayer name="Nízké Tatry - RGB-Satelit 2019">
-=======
-                  <LayersControl.BaseLayer name="Low Tatras Sat 2019">
->>>>>>> change text language
                         <ImageOverlay
                         url={jasnaSat2019}
                         bounds={[

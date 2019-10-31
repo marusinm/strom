@@ -17,8 +17,9 @@ class App extends Component {
         <header className="App-header"> 
             <h1>Ström</h1>
             <div class="description">
-                Ström je aplikace využívající satelitní snímky k detekci úbytku lesů - v současné době máme pouze “proof of concept”, ale i na něm jde krásně pochopit co vytváříme. 
-                Model lokalizuje a umisťuje na mapu katastru jak legání, tak nelegální kácení stromů. K tomu využívá satelitní snímky z programu Copernicus, které zpracovává a analyzuje úbytek lesa.
+                Ström je aplikace využívající satelitní snímky k detekci úbytku lesů - v současné době máme pouze “proof of concept”, ale i na něm jde krásně pochopit co vytváříme. Cílem je vytvořit veřejný a zdarma volně dostupný produkt.
+                <br/><br/>
+                Model lokalizuje jak legání, tak nelegální kácení stromů. K tomu využívá satelitní snímky z programu Copernicus, které zpracovává a analyzuje úbytek lesa - v případě dostupných katastrálních dat (jako je to například v ČR) pak umíme úbytek zařadit do kontextu katastrální mapy. 
             </div>
             <Link
                 class="btn btn-dark btn-lg"
@@ -33,15 +34,7 @@ class App extends Component {
         <section id="low-tatras" class="sec low-tatras">
             <h2 class="map-header"> Nízké Tatry, Slovensko  </h2>
                 <div class="map-desc">
-                    {/*Volne dostupne satelitne data zo sluzby <a target="_blank" href="https://www.sentinel-hub.com/" style={{ color: 'Orange' }}>SentinelHub </a>
-                    ako RGB snimky ci vegetacny index (NDVI) a ich porovnania v case za pomoci Image Processing technik pomahaju zistit
-                    ako sa les menil v priebehu rokov. Detekcia prebieha na zaklade vyskumu "<a target="_blank" href="https://www.researchgate.net/publication/326729428_Tropical_deforestation_monitoring_using_NDVI_from_MODIS_satellite_a_case_study_in_Pahang_Malaysia" style={{ color: 'Orange' }}>
-                     Tropical deforestation monitoring using NDVI from MODIS satellite: a case study in Pahang, Malaysia
-                    </a>".*/}
-
-                    Model bere data ze služby <a target="_blank" href="https://www.sentinel-hub.com/" style={{ color: 'Orange' }}>SentinelHub</a>
-                    - RGB snímky a vegetační index (NDVI) a porovnává je v čase za pomocí pokročilých technik zpracování obrazu, které nám pomáhají pochopit, jak se les měnil v průběhu let. (přidat jaké roky jsou na obrázku) Samotná detekce proběhla na základě výzkumu <a target="_blank" href="https://www.researchgate.net/publication/326729428_Tropical_deforestation_monitoring_using_NDVI_from_MODIS_satellite_a_case_study_in_Pahang_Malaysia" style={{ color: 'Orange' }}>
-                     "Tropical deforestation monitoring using NDVI from MODIS satellite: a case study in Pahang, Malaysia"</a>.
+                     Model bere data ze služby <a target="_blank" href="https://www.sentinel-hub.com/" style={{ color: 'Orange' }}>SentinelHub</a> - RGB snímky a vegetační index (NDVI) a porovnává je v čase za pomocí pokročilých technik zpracování obrazu, které nám pomáhají pochopit, jak se les měnil v průběhu let 2015 až 2019. Samotná detekce proběhla na základě výzkumu <a target="_blank" href="https://www.researchgate.net/publication/326729428_Tropical_deforestation_monitoring_using_NDVI_from_MODIS_satellite_a_case_study_in_Pahang_Malaysia" style={{ color: 'Orange' }}>"Tropical deforestation monitoring using NDVI from MODIS satellite: a case study in Pahang, Malaysia"</a>.
                 </div>
             <div class="map-wrapper">
                 <MapLowTatras id="Map"/>
