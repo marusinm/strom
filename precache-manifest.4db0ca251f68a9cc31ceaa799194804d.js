@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "4e17fc3b6e22cd90a2bd",
+    "revision": "58531141c486abe88ca2",
     "url": "/strom/static/css/main.5326b219.chunk.css"
   },
   {
-    "revision": "4e17fc3b6e22cd90a2bd",
-    "url": "/strom/static/js/main.4e17fc3b.chunk.js"
+    "revision": "58531141c486abe88ca2",
+    "url": "/strom/static/js/main.58531141.chunk.js"
   },
   {
     "revision": "19dde04c23cfab38d715",
@@ -20,12 +20,12 @@ self.__precacheManifest = [
     "url": "/strom/static/media/body-bg-blur2.4afd23ed.jpg"
   },
   {
-    "revision": "b203eabfb0a5c8c9c5fc0ef277b8511e",
-    "url": "/strom/static/media/body-bg-blur.b203eabf.jpg"
-  },
-  {
     "revision": "dd1a933ba0287e824ec3f84eeb53a8f6",
     "url": "/strom/static/media/body-bg-blur1.dd1a933b.jpg"
+  },
+  {
+    "revision": "b203eabfb0a5c8c9c5fc0ef277b8511e",
+    "url": "/strom/static/media/body-bg-blur.b203eabf.jpg"
   },
   {
     "revision": "c3bcd8e58358b02acb1803791408e63f",
@@ -76,7 +76,7 @@ self.__precacheManifest = [
     "url": "/strom/static/media/head-bg3.7b535aa8.jpg"
   },
   {
-    "revision": "d002ea38b1aea10df6ac535dc9485368",
+    "revision": "47698176d421ec15e70e1253222baaca",
     "url": "/strom/index.html"
   }
 ];
