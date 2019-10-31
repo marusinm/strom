@@ -39,6 +39,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ### `npm run deploy`
-Command will deploy react app on github pages.
-*[tutoria1](https://medium.com/the-andela-way/how-to-deploy-your-react-application-to-github-pages-in-less-than-5-minutes-8c5f665a2d2a)
-*[tutorial2](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f)
+Command will deploy react app on github pages.  
+- [tutoria1](https://medium.com/the-andela-way/how-to-deploy-your-react-application-to-github-pages-in-less-than-5-minutes-8c5f665a2d2a)   
+- [tutorial2](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f)  
