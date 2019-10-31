@@ -59,7 +59,6 @@ class MapLowTatras extends React.Component {
                 </Marker>
 
                 <LayersControl position="topright">
-
                   <LayersControl.BaseLayer name="Nízké Tatry - RGB-Satelit 2015" checked>
                         <ImageOverlay
                         url={jasnaSat2015}
