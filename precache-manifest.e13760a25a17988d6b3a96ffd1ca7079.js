@@ -1,31 +1,31 @@
 self.__precacheManifest = [
   {
-    "revision": "58531141c486abe88ca2",
-    "url": "/strom/static/css/main.5326b219.chunk.css"
+    "revision": "626334a090e8a79c796b",
+    "url": "/strom/static/css/main.612de717.chunk.css"
   },
   {
-    "revision": "58531141c486abe88ca2",
-    "url": "/strom/static/js/main.58531141.chunk.js"
+    "revision": "626334a090e8a79c796b",
+    "url": "/strom/static/js/main.626334a0.chunk.js"
   },
   {
     "revision": "19dde04c23cfab38d715",
     "url": "/strom/static/js/runtime~main.19dde04c.js"
   },
   {
-    "revision": "954c123e8bc4a9fcb5fe",
-    "url": "/strom/static/js/2.954c123e.chunk.js"
+    "revision": "a5a43cffae5701a64a43",
+    "url": "/strom/static/js/2.a5a43cff.chunk.js"
   },
   {
     "revision": "4afd23ed070bd73a60a3af73d04b2231",
     "url": "/strom/static/media/body-bg-blur2.4afd23ed.jpg"
   },
   {
-    "revision": "dd1a933ba0287e824ec3f84eeb53a8f6",
-    "url": "/strom/static/media/body-bg-blur1.dd1a933b.jpg"
-  },
-  {
     "revision": "b203eabfb0a5c8c9c5fc0ef277b8511e",
     "url": "/strom/static/media/body-bg-blur.b203eabf.jpg"
+  },
+  {
+    "revision": "dd1a933ba0287e824ec3f84eeb53a8f6",
+    "url": "/strom/static/media/body-bg-blur1.dd1a933b.jpg"
   },
   {
     "revision": "c3bcd8e58358b02acb1803791408e63f",
@@ -76,7 +76,7 @@ self.__precacheManifest = [
     "url": "/strom/static/media/head-bg3.7b535aa8.jpg"
   },
   {
-    "revision": "47698176d421ec15e70e1253222baaca",
+    "revision": "da834232c9f58925cdffef02089b8656",
     "url": "/strom/index.html"
   }
 ];
