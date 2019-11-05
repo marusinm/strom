@@ -36,6 +36,11 @@ class MapLowTatras extends React.Component {
       // this.setState({ currentPos: e.latlng });
     }
 
+    // componentWillReceiveProps(nextProps) { 
+    //   console.log("recived props");
+    //   this.forceUpdate();
+    // }
+
     render() {
         return (
             <div>
@@ -59,7 +64,8 @@ class MapLowTatras extends React.Component {
                 </Marker>
 
                 <LayersControl position="topright">
-                  <LayersControl.BaseLayer name="Nízké Tatry - RGB-Satelit 2015" checked>
+                  {/*<LayersControl.BaseLayer name="Nízké Tatry - RGB-Satelit 2015" checked>*/}
+                  <LayersControl.BaseLayer name="Low Tatras Mountains - RGB-Satellite 2015" checked>
                         <ImageOverlay
                         url={jasnaSat2015}
                         bounds={[
@@ -70,7 +76,8 @@ class MapLowTatras extends React.Component {
                         >
                         </ImageOverlay>
                   </LayersControl.BaseLayer>
-                  <LayersControl.BaseLayer name="Nízké Tatry - RGB-Satelit 2019">
+                  {/*<LayersControl.BaseLayer name="Nízké Tatry - RGB-Satelit 2019">*/}
+                  <LayersControl.BaseLayer name="Low Tatras Mountains - RGB-Satellite 2019">
                         <ImageOverlay
                         url={jasnaSat2019}
                         bounds={[
@@ -81,7 +88,8 @@ class MapLowTatras extends React.Component {
                         >
                         </ImageOverlay>
                   </LayersControl.BaseLayer>
-                  <LayersControl.Overlay name="Nízké Tatry - Úbytek lesa - rozdíl vegetačních indexů (NDVI)" checked>
+                  {/*<LayersControl.Overlay name="Nízké Tatry - Úbytek lesa - rozdíl vegetačních indexů (NDVI)" checked>*/}
+                  <LayersControl.Overlay name="Low Tatras Mountains - Forest degradation detected using vegetation indices (NDVI)" checked>
                         <ImageOverlay
                         url={jasnaNdviDiff}
                         bounds={[

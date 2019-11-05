@@ -1,0 +1,44 @@
+{
+	"intro" : {
+  	"txt_intro1": "Ström is an application using satellite imagery for deforestation detection. At this stage this is the Proof of Concept model, however, we believe that our target is clear and understandable. We also want to provide a global and free accessible service for everyone.",
+  	"txt_intro2": "Model localize both legal and illegal trees cutting. We are finding forest loss by analyzing data from Copernicus and Landstat satellites. If a land registry is available for detected forest degradation area we are able to draw the consequences.",
+  	"btn_use_cases": "Show use-cases"
+  },
+  	"low_tatras" : {
+  	"caption": "Low Tatras Mountains, Slovakia",
+  	"description1": "Model downloads data from the",
+  	"description2": "- RGB imagery and vegetation index (NDVI) are then compared in time. All is done with the help of advanced techniques of image processing. The results help us understand how forests are changing, on the map, there is a difference between the years 2015 - 2019. All particular details are available in the research paper:",
+  	"legend1_line1": "Interactive",
+  	"legend1_line2": "filter of layers",
+  	"legend2_line1": "Deforested patches",
+  	"legend2_line2": "between years 2015 - 2019",
+  	"btn_next": "Next use-case"
+  },
+  	"sumava" : {
+  	"caption": "Šumava, Czech Republic",
+  	"description1": "If we use land registry (freely available in some countries) we can find if deforestation is legal and has all permissions in detected areas. Based on such analyzation we could notify the owner of the land or company manager responsible for workers in these areas. We are preparing neural networks and other modern techniques for similar detections.",
+  	"legend1_line1": "Interactive",
+  	"legend1_line2": "filter of layers",
+  	"legend2_line1": "Deforested patches",
+  	"legend2_line2": "between years 2015 - 2019",
+  	"legend3_line1": "Land registry",
+  	"legend3_line2": "borders",
+  	"btn_next": "Next use-case"
+  },
+  	"decin" : {
+  	"caption": "Dečín, Czech Republic",
+  	"description1": "Another indicator of deforestation is obtained from synthetic aperture radar (SAR) images, which relies on a geometric artifact that appears when deforestation happens. We can analyze radar shadows at the borders of forest in time and detect the deforested patches. All particular principles are available in the research paper:",
+  	"legend1_line1": "Interactive",
+  	"legend1_line2": "filter of layers",
+  	"legend2_line1": "Shadow at the borders",
+  	"legend2_line2": "of the deforested patches between years 2015 - 2019",
+  	"btn_next": "Finish"
+  },
+  	"footer" : {
+  	"sources": "Open data - Sources",
+  	"maps_from": "Maps from",
+  	"satellite_from": "Satellite data from",
+  	"land_registry_from": "Land registry from",
+  	"cuzk": "Geoportal ČÚZK"
+  }
+}

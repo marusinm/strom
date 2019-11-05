@@ -1,0 +1,44 @@
+{
+	"intro" : {
+  	"txt_intro1": "Ström je aplikace využívající satelitní snímky k detekci úbytku lesů - v současné době máme pouze “proof of concept”, ale i na něm jde krásně pochopit co vytváříme. Cílem je vytvořit veřejný a zdarma volně dostupný produkt.",
+  	"txt_intro2": "Model lokalizuje jak legání, tak nelegální kácení stromů. K tomu využívá satelitní snímky z programu Copernicus, které zpracovává a analyzuje úbytek lesa - v případě dostupných katastrálních dat (jako je to například v ČR) pak umíme úbytek zařadit do kontextu katastrální mapy.",
+  	"btn_use_cases": "Příklady analýzy"
+  },
+  	"low_tatras" : {
+  	"caption": "Nízké Tatry, Slovensko",
+  	"description1": "Model bere data ze služby",
+  	"description2": "- RGB snímky a vegetační index (NDVI) a porovnává je v čase za pomocí pokročilých technik zpracování obrazu, které nám pomáhají pochopit, jak se les měnil v průběhu let 2015 až 2019. Samotná detekce proběhla na základě výzkumu",
+  	"legend1_line1": "Interaktivní",
+  	"legend1_line2": "filtr vrstev",
+  	"legend2_line1": "Úbytek lesa mezi",
+  	"legend2_line2": "lety 2015 až 2019",
+  	"btn_next": "Pokračuj"
+  },
+  	"sumava" : {
+  	"caption": "Šumava, Česko",
+  	"description1": "Při využití volně dostupných katastrálních dat dokážeme detekovat, zdali výkácená oblast zasahuje do povolených katastrálních území. Na podobné detekce plánujeme využívat neuronové sítě, v budoucnu si umíme představit i kontaktování majitele pozemku, nebo další služby.",
+  	"legend1_line1": "Interaktivní",
+  	"legend1_line2": "filtr vrstev",
+  	"legend2_line1": "Úbytek lesa mezi",
+  	"legend2_line2": "lety 2015 až 2019",
+  	"legend3_line1": "Hranice",
+  	"legend3_line2": "katastrálního pozemku",
+  	"btn_next": "Pokračuj"
+  },
+  	"decin" : {
+  	"caption": "Dečín, Česko",
+  	"description1": "Další méně populární techika výpočtu změny objemu lesů spočívá ve využití radarových dat ze satelitů. Tyto snímky nám ukazují hranici lesa a tak můžeme porovnávat její pozici a případnou změnu v průběhu času. Princip opět vychází z publikovaného článku, tentokrát jde o",
+  	"legend1_line1": "Interaktivní",
+  	"legend1_line2": "filtr vrstev",
+  	"legend2_line1": "Posunutí radarového stínu",
+  	"legend2_line2": "lesa v průběhu let 2015 až 2019",
+  	"btn_next": "Konec"
+  },
+  	"footer" : {
+  	"sources": "Open data - Zdroje",
+  	"maps_from": "Mapy od",
+  	"satellite_from": "Satelitní data od",
+  	"land_registry_from": "Katastrální území od",
+  	"cuzk": "Geoportál ČÚZK"
+  }
+}

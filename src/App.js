@@ -8,133 +8,145 @@ import './App.css';
 import './map/Map.css';
 import logo from './assets/images/logo-z-transparent.png';
 import filter_icon from './assets/images/filter_icon.png';
+import en from './translation/en';
+import cz from './translation/cz.json';
 
 class App extends Component {
 
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header"> 
-            <h1>Ström</h1>
-            <div class="description">
-                Ström je aplikace využívající satelitní snímky k detekci úbytku lesů - v současné době máme pouze “proof of concept”, ale i na něm jde krásně pochopit co vytváříme. Cílem je vytvořit veřejný a zdarma volně dostupný produkt.
-                <br/><br/>
-                Model lokalizuje jak legání, tak nelegální kácení stromů. K tomu využívá satelitní snímky z programu Copernicus, které zpracovává a analyzuje úbytek lesa - v případě dostupných katastrálních dat (jako je to například v ČR) pak umíme úbytek zařadit do kontextu katastrální mapy. 
+    constructor(props) {
+        super(props);
+        this.state = {
+            translation: cz
+        };
+    }
+
+    translate_en = () => {
+        this.setState({translation: en});
+    }
+
+    translate_cs = () => {
+        this.setState({translation: cz});   
+    }
+
+    render() {
+        return (
+          <div className="App">
+            <header className="App-header"> 
+                <div className="App-translate">
+                <button className="btn btn-translate" type="button" onClick={this.translate_en}>EN</button>
+                <button className="btn btn-translate" type="button" onClick={this.translate_cs}>CS</button>
+                </div>
+                <h1>Ström</h1>
+                <div class="description">
+                    {this.state.translation.intro.txt_intro1}
+                    <br/><br/>
+                    {this.state.translation.intro.txt_intro2}
+                </div>
+                <Link
+                    class="btn btn-dark btn-lg"
+                    to="low-tatras"
+                    smooth={true}
+                    duration= {500}
+                >
+                {this.state.translation.intro.btn_use_cases}
+                </Link>
+            </header>
+            <div>
+            <section id="low-tatras" class="sec low-tatras">
+                <h2 class="map-header"> {this.state.translation.low_tatras.caption} </h2>
+                    <div class="map-desc">
+                         {this.state.translation.low_tatras.description1} <a target="_blank" href="https://www.sentinel-hub.com/" style={{ color: 'Orange' }}>SentinelHub</a> {this.state.translation.low_tatras.description2} <a target="_blank" href="https://www.researchgate.net/publication/326729428_Tropical_deforestation_monitoring_using_NDVI_from_MODIS_satellite_a_case_study_in_Pahang_Malaysia" style={{ color: 'Orange' }}>"Tropical deforestation monitoring using NDVI from MODIS satellite: a case study in Pahang, Malaysia"</a>.
+                    </div>
+                <div class="map-wrapper">
+                    <MapLowTatras id="Map"/>
+                    <div class="legend">
+                        <img src={filter_icon} class="legend_image" />
+                        <p class="legend_text">{this.state.translation.low_tatras.legend1_line1}<br/>{this.state.translation.low_tatras.legend1_line2}</p>
+                        <div class="legend_square1"> </div>
+                        <p class="legend_text">{this.state.translation.low_tatras.legend2_line1}<br/>{this.state.translation.low_tatras.legend2_line2}</p>
+                    </div>
+                </div>
+                <Link
+                    class="btn btn-dark btn-lg"
+                    to="sumava"
+                    smooth={true}
+                    duration= {500}
+                >
+                {this.state.translation.low_tatras.btn_next}
+                </Link>
+            </section>
             </div>
-            <Link
-                class="btn btn-dark btn-lg"
-                to="low-tatras"
-                smooth={true}
-                duration= {500}
-            >
-            Příklady analýzy
-            </Link>
-        </header>
-        <div>
-        <section id="low-tatras" class="sec low-tatras">
-            <h2 class="map-header"> Nízké Tatry, Slovensko  </h2>
+
+            <section id="sumava" class="sec sumava">
+                <h2 class="map-header"> {this.state.translation.sumava.caption} </h2>
                 <div class="map-desc">
-                     Model bere data ze služby <a target="_blank" href="https://www.sentinel-hub.com/" style={{ color: 'Orange' }}>SentinelHub</a> - RGB snímky a vegetační index (NDVI) a porovnává je v čase za pomocí pokročilých technik zpracování obrazu, které nám pomáhají pochopit, jak se les měnil v průběhu let 2015 až 2019. Samotná detekce proběhla na základě výzkumu <a target="_blank" href="https://www.researchgate.net/publication/326729428_Tropical_deforestation_monitoring_using_NDVI_from_MODIS_satellite_a_case_study_in_Pahang_Malaysia" style={{ color: 'Orange' }}>"Tropical deforestation monitoring using NDVI from MODIS satellite: a case study in Pahang, Malaysia"</a>.
+                    {this.state.translation.sumava.description1}
                 </div>
-            <div class="map-wrapper">
-                <MapLowTatras id="Map"/>
-                <div class="legend">
-                    <img src={filter_icon} class="legend_image" />
-                    <p class="legend_text">Interaktivní <br/> filtr vrstev</p>
-                    <div class="legend_square1"> </div>
-                    <p class="legend_text">Úbytek lesa mezi <br/> lety 2015 až 2019</p>
+                <div class="map-wrapper">
+                    <MapSumava id="Map"/>
+                    <div class="legend">
+                        <img src={filter_icon} class="legend_image" />
+                        <p class="legend_text">{this.state.translation.sumava.legend1_line1}<br/>{this.state.translation.sumava.legend1_line2}</p>
+                        <div class="legend_square1"> </div>
+                        <p class="legend_text">{this.state.translation.sumava.legend2_line1}<br/>{this.state.translation.sumava.legend2_line2}</p>
+                        <div class="legend_square2"> </div>
+                        <p class="legend_text">{this.state.translation.sumava.legend3_line1}<br/>{this.state.translation.sumava.legend3_line2}</p>
+                    </div>
                 </div>
-            </div>
-            <Link
-                class="btn btn-dark btn-lg"
-                to="sumava"
-                smooth={true}
-                duration= {500}
-            >
-            Pokračuj
-            </Link>
-        </section>
-        </div>
+                <Link
+                    class="btn btn-dark btn-lg"
+                    to="decin"
+                    smooth={true}
+                    duration= {500}
+                >
+                {this.state.translation.sumava.btn_next}
+                </Link>
+            </section>
 
-        <section id="sumava" class="sec sumava">
-            <h2 class="map-header"> Šumava, Česko </h2>
-            <div class="map-desc">
-                Při využití volně dostupných katastrálních dat dokážeme detekovat, zdali výkácená oblast zasahuje do povolených katastrálních území. Na podobné detekce plánujeme využívat neuronové sítě, v budoucnu si umíme představit i kontaktování majitele pozemku, nebo další služby. 
-            </div>
-            <div class="map-wrapper">
-                <MapSumava id="Map"/>
-                <div class="legend">
-                    <img src={filter_icon} class="legend_image" />
-                    <p class="legend_text">Interaktivní <br/> filtr vrstev</p>
-                    <div class="legend_square1"> </div>
-                    <p class="legend_text">Úbytek lesa mezi <br/> lety 2015 az 2019</p>
-                    <div class="legend_square2"> </div>
-                    <p class="legend_text">Hranice <br/> katastrálního pozemku</p>
+            <section id="decin" class="sec decin">
+                <h2 class="map-header"> {this.state.translation.decin.caption} </h2>
+                <div class="map-desc">
+                    {this.state.translation.decin.description1} <a target="_blank" href="https://www.researchgate.net/publication/326916715_Use_of_the_SAR_Shadowing_Effect_for_Deforestation_Detection_with_Sentinel-1_Time_Series">"Use of the SAR Shadowing Effect for Deforestation Detection with Sentinel-1 Time Series"</a>.
                 </div>
-            </div>
-            <Link
-                class="btn btn-dark btn-lg"
-                to="decin"
-                smooth={true}
-                duration= {500}
-            >
-            Pokračuj
-            </Link>
-        </section>
-
-        <section id="decin" class="sec decin">
-            <h2 class="map-header"> Dečín, Česko </h2>
-            <div class="map-desc">
-                {/*Dalsia menej popularna technika je vyuzitie dat z radarovych snimkov z orbitu zeme. Tieto snimky nam 
-                na rovnych plochach ukazuju radarovy tien hranice lesa. Porovnanie medzi rokmi nam ukazuje
-                ako sa hranica lesa posunula.
-                Principy a dokazy su popisane
-                vo vyskume s nazvom "<a target="_blank" href="https://www.researchgate.net/publication/326916715_Use_of_the_SAR_Shadowing_Effect_for_Deforestation_Detection_with_Sentinel-1_Time_Series">
-                Use of the SAR Shadowing Effect for Deforestation Detection with Sentinel-1 Time Series
-                </a>"*/}
-
-                Další méně populární techika výpočtu změny objemu lesů spočívá ve využití radarových dat ze satelitů. Tyto snímky nám ukazují hranici lesa a tak můžeme porovnávat její pozici a případnou změnu v průběhu času. Princip opět vychází z publikovaného článku, tentokrát jde o <a target="_blank" href="https://www.researchgate.net/publication/326916715_Use_of_the_SAR_Shadowing_Effect_for_Deforestation_Detection_with_Sentinel-1_Time_Series">"Use of the SAR Shadowing Effect for Deforestation Detection with Sentinel-1 Time Series"</a>.
-            </div>
-            <div class="map-wrapper">
-                <MapDecin id="Map"/>
-                <div class="legend">
-                    <img src={filter_icon} class="legend_image" />
-                    <p class="legend_text">Interaktivní <br/> filtr vrstev</p>
-                    <div class="legend_square3"> </div>
-                    <p class="legend_text">Posunutí radarového stínu<br/> lesa v průběhu let 2015 až 2019</p>
+                <div class="map-wrapper">
+                    <MapDecin id="Map"/>
+                    <div class="legend">
+                        <img src={filter_icon} class="legend_image" />
+                        <p class="legend_text">{this.state.translation.decin.legend1_line1}<br/>{this.state.translation.decin.legend1_line2}</p>
+                        <div class="legend_square3"> </div>
+                        <p class="legend_text">{this.state.translation.decin.legend2_line1}<br/>{this.state.translation.decin.legend2_line2}</p>
+                    </div>
                 </div>
-            </div>
-            <Link
-                class="btn btn-dark btn-lg"
-                to="footer"
-                smooth={true}
-                duration= {500}
-            >
-            Konec
-            </Link>
-        </section>
+                <Link
+                    class="btn btn-dark btn-lg"
+                    to="footer"
+                    smooth={true}
+                    duration= {500}
+                >
+                {this.state.translation.decin.btn_next}
+                </Link>
+            </section>
 
-        <footer id="footer" className="App-footer"> 
-            <div class="Footer-div">
-                <h4>Open data - Zdroje</h4>
-                
-                Mapy od <a target="_blank" href="https://www.openstreetmap.org/#map=8/48.674/19.709">OpenStreetMap</a>
-                <br />
-                Satelitní data od <a target="_blank" href="https://scihub.copernicus.eu">Copernicus Open Access Hub</a> 
-                <br />
-                Katastrální území od <a target="_blank" href="https://geoportal.cuzk.cz/(S(kbu2aqdwswrucnikn5v1hm4m))/Default.aspx?mode=TextMeta&text=mapa.katastralni_uvod&side=mapy_KM">Geoportál ČÚZK</a>
-            </div>
+            <footer id="footer" className="App-footer"> 
+                <div class="Footer-div">
+                    <h4>{this.state.translation.footer.sources}</h4>
+                    
+                    {this.state.translation.footer.maps_from} <a target="_blank" href="https://www.openstreetmap.org/#map=8/48.674/19.709">OpenStreetMap</a>
+                    <br />
+                    {this.state.translation.footer.satellite_from} <a target="_blank" href="https://scihub.copernicus.eu">Copernicus Open Access Hub</a> 
+                    <br />
+                    {this.state.translation.footer.land_registry_from} <a target="_blank" href="https://geoportal.cuzk.cz/(S(kbu2aqdwswrucnikn5v1hm4m))/Default.aspx?mode=TextMeta&text=mapa.katastralni_uvod&side=mapy_KM">{this.state.translation.footer.cuzk}</a>
+                </div>
 
-            <div class="Footer-div">
-                Created by <a target="_blank" href="https://zaitra.io/">zaitra.io</a>
-                <br/>
-                <img src={logo} alt="Logo" class="Footer-logo" />
-            </div>
-        
-        </footer>
-      </div>
-    );
-  }
+                <div class="Footer-div">
+                    Created by <a target="_blank" href="https://zaitra.io/">zaitra.io</a>
+                    <br/>
+                    <img src={logo} alt="Logo" class="Footer-logo" />
+                </div>
+            </footer>
+          </div>
+        );
+    }
 }
 
 export default App;

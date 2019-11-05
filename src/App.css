@@ -41,6 +41,30 @@
   padding-left: 5%;
 } 
 
+.App-translate {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 100%;
+  /*color: white;*/
+  position: top;
+  /*align-items: right;
+  justify-content: right;*/
+  /*padding: 5px;*/
+}
+.btn-translate {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-translate:hover,
+.btn-translate:focus,
+.btn-translate:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
 .Footer-logo {
   /*animation: App-logo-spin infinite 20s linear;*/
   height: 5vmin;
